@@ -1,22 +1,132 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trackio Tech</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <style>
-    .clignotant {
-      animation: clignote 1s linear infinite;
-      color: red; /* couleur facultative */
-      font-weight: bold;
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    @keyframes clignote {
-      0% { opacity: 1; }
-      50% { opacity: 0; }
-      100% { opacity: 1; }
+    .hero {
+      background: url('https://cdn.pixabay.com/photo/2016/10/19/08/56/gps-1758969_1280.jpg') no-repeat center center/cover;
+      color: white;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero-content h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    .hero-content p {
+      font-size: 1.2em;
+    }
+
+    .services, .gallery {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background-color: #f5f5f5;
+      padding: 20px;
+      width: 280px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 60px;
+      height: 60px;
+    }
+
+    .card h3 {
+      margin: 15px 0 10px;
+    }
+
+    .images {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .images img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
     }
   </style>
 </head>
 <body>
-  <p class="clignotant">Ce texte clignote !</p>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Bienvenue chez Trackio Tech</h1>
+      <p>Solutions de géolocalisation fiables et innovantes</p>
+    </div>
+  </header>
+
+  <section class="services">
+    <h2>Nos services</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/535/535137.png" alt="Suivi en temps réel" />
+        <h3>Suivi en temps réel</h3>
+        <p>Surveillez vos véhicules et vos biens à tout moment, où que vous soyez.</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Alertes intelligentes" />
+        <h3>Alertes intelligentes</h3>
+        <p>Recevez des notifications en cas de mouvement suspect ou de sortie de zone définie.</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/854/854878.png" alt="Rapports détaillés" />
+        <h3>Rapports détaillés</h3>
+        <p>Analysez l'historique des trajets et les performances de votre flotte.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h2>Notre technologie</h2>
+    <div class="images">
+      <img src="https://cdn.pixabay.com/photo/2016/10/19/08/56/gps-1758969_1280.jpg" alt="Dashboard GPS"/>
+      <img src="https://cdn.pixabay.com/photo/2017/01/20/00/30/gps-1992432_960_720.jpg" alt="Carte de localisation"/>
+      <img src="https://cdn.pixabay.com/photo/2020/04/03/08/40/gps-4997045_1280.jpg" alt="Tracking mobile"/>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Trackio Tech. Tous droits réservés.</p>
+  </footer>
+
 </body>
 </html>
