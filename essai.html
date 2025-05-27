@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .clignotant {
+      animation: clignote 1s linear infinite;
+      color: red; /* couleur facultative */
+      font-weight: bold;
+    }
+
+    @keyframes clignote {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <p class="clignotant">Ce texte clignote !</p>
+</body>
+</html>
